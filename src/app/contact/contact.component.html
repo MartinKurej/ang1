@@ -1,0 +1,18 @@
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <h2 style="color:#4BABE0">Contact us</h2>
+    <div class="margin-top-right">
+        <input class="form-control" id="name" type="text" formControlName="name" placeholder="Name">
+    </div>
+    <div class="margin-top-right">
+        <input class="form-control" id="email" type="email" formControlName="email" placeholder="E-mail">
+    </div>
+    <div class="margin-top-right">
+      <textarea class="form-control" id="message" formControlName="message" rows="3"></textarea>
+    </div>
+    <div class="margin-top-right">
+        <button class="btn btn-primary" type="submit" [disabled]="!contactForm.valid">Send</button>
+    </div>
+  
+  </form>

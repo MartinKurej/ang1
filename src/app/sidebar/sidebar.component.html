@@ -1,0 +1,7 @@
+<div #sidebar>
+    <ul class="list-style-none">
+        <li *ngFor="let menu of menus">
+            <b><a [routerLink]="menu.url" style="color: #0A58CA; text-decoration: none;">{{menu.label}}</a></b>
+        </li>
+    </ul>
+</div>

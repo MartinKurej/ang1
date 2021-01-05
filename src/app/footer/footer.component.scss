@@ -1,0 +1,16 @@
+footer {
+    height: 250px;
+    background-color: #ccc;
+}
+.flex-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-item {
+    padding: 40px;
+}
+
+:host {
+    position: absolute;
+    bottom: 0px;
+}

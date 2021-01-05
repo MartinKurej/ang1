@@ -1,0 +1,13 @@
+<form [formGroup]="blogForm" (ngSubmit)="onSubmit()">
+
+    <h2 style="color:#0A7DD9">Blog</h2>
+    <div class="margin-top-right">
+        <input class="form-control" id="name" type="text" formControlName="title" placeholder="Title">
+    </div>
+    <div class="margin-top-right">
+        <textarea class="form-control" id="message" formControlName="text" rows="3"></textarea>
+    </div>
+    <div class="margin-top-right">
+        <button class="btn btn-primary" type="submit" [disabled]="!blogForm.valid">Save</button>
+    </div>
+</form>

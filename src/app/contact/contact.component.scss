@@ -1,0 +1,21 @@
+.text-center {
+    text-align: center;
+}
+
+
+
+.form-label {
+    margin-bottom: .5rem;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+textarea.form-control {
+    min-height: calc(1.5em + .75rem + 2px);
+    font-family: inherit;
+    
+}
+

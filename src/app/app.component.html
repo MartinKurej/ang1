@@ -1,0 +1,10 @@
+<app-header (expCollapse)="expandCollapseHandle()"></app-header>
+<div class="flex-around">
+  <div id="sidebar" [class.display-none]="collapsed" >
+    <app-sidebar></app-sidebar>
+  </div>
+  <div id="main" [class.width-100]="collapsed">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-footer></app-footer>

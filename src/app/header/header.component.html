@@ -1,0 +1,18 @@
+<header>
+    <div class="pl-135">
+        <div class="logo-flex">
+            <img src="../../assets/images/blog.jpg" class="logo-icon">
+            <button type="button" id="expCollapse" (click)="expandCollapse()"><b>Expand/Collapse</b></button>
+        </div>
+    </div>
+    <nav class="pr-135">
+        <ul>
+            <!-- <li><a routerLink=""><b>Home</b></a></li>
+            <li><a routerLink="contact"><b>Contact</b></a></li>
+            <li><a routerLink="about"><b>About</b></a></li> -->
+            <li *ngFor="let menu of menus">
+                <a [routerLink]="menu.url" style="color: #0A58CA;">{{menu.label}}</a>
+            </li>
+        </ul>
+    </nav>
+</header>

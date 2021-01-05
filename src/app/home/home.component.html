@@ -1,0 +1,18 @@
+<div class="margin-top-right">
+    <button type="button" class="btn btn-primary" routerLink="addblog">Add Blog</button>
+</div>
+<form [formGroup]="blogForm">
+    <div class="margin-top-right">
+        <input class="form-control" id="search" type="search" formControlName="search" placeholder="Search Blogs...">
+    </div>
+    <!-- <input type="search" class="form-control"> -->
+
+
+
+</form>
+<div style="max-height: 240px; height: 100%; overflow-y: scroll">
+    <div *ngFor="let blog of listOfBlogs" class="margin-top-right" style="margin-left: 10px; color: #0A58CA;" (click)="editBlog(blog)">
+        <a><b>{{blog.title}}</b></a>
+    </div>
+</div>
+
